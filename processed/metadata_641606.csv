@@ -1,0 +1,46 @@
+series_id,content,frequency,unit,series_type
+A83728603C,Value of dwelling stock; Owned by Households ;  New South Wales ;,Quarter,$ Millions,Original
+A83728608R,Value of dwelling stock; Owned by Households ;  Victoria ;,Quarter,$ Millions,Original
+A83728613J,Value of dwelling stock; Owned by Households ;  Queensland ;,Quarter,$ Millions,Original
+A83728618V,Value of dwelling stock; Owned by Households ;  South Australia ;,Quarter,$ Millions,Original
+A83728623L,Value of dwelling stock; Owned by Households ;  Western Australia ;,Quarter,$ Millions,Original
+A83728628X,Value of dwelling stock; Owned by Households ;  Tasmania ;,Quarter,$ Millions,Original
+A83728633T,Value of dwelling stock; Owned by Households ;  Northern Territory ;,Quarter,$ Millions,Original
+A83728638C,Value of dwelling stock; Owned by Households ;  Australian Capital Territory ;,Quarter,$ Millions,Original
+A83728643W,Value of dwelling stock; Owned by Households ;  Australia ;,Quarter,$ Millions,Original
+A83728604F,Value of dwelling stock; Owned by Non-Households ;  New South Wales ;,Quarter,$ Millions,Original
+A83728609T,Value of dwelling stock; Owned by Non-Households ;  Victoria ;,Quarter,$ Millions,Original
+A83728614K,Value of dwelling stock; Owned by Non-Households ;  Queensland ;,Quarter,$ Millions,Original
+A83728619W,Value of dwelling stock; Owned by Non-Households ;  South Australia ;,Quarter,$ Millions,Original
+A83728624R,Value of dwelling stock; Owned by Non-Households ;  Western Australia ;,Quarter,$ Millions,Original
+A83728629A,Value of dwelling stock; Owned by Non-Households ;  Tasmania ;,Quarter,$ Millions,Original
+A83728634V,Value of dwelling stock; Owned by Non-Households ;  Northern Territory ;,Quarter,$ Millions,Original
+A83728639F,Value of dwelling stock; Owned by Non-Households ;  Australian Capital Territory ;,Quarter,$ Millions,Original
+A83728644X,Value of dwelling stock; Owned by Non-Households ;  Australia ;,Quarter,$ Millions,Original
+A83728606K,Value of dwelling stock; Owned by All Sectors ;  New South Wales ;,Quarter,$ Millions,Original
+A83728611C,Value of dwelling stock; Owned by All Sectors ;  Victoria ;,Quarter,$ Millions,Original
+A83728616R,Value of dwelling stock; Owned by All Sectors ;  Queensland ;,Quarter,$ Millions,Original
+A83728621J,Value of dwelling stock; Owned by All Sectors ;  South Australia ;,Quarter,$ Millions,Original
+A83728626V,Value of dwelling stock; Owned by All Sectors ;  Western Australia ;,Quarter,$ Millions,Original
+A83728631L,Value of dwelling stock; Owned by All Sectors ;  Tasmania ;,Quarter,$ Millions,Original
+A83728636X,Value of dwelling stock; Owned by All Sectors ;  Northern Territory ;,Quarter,$ Millions,Original
+A83728641T,Value of dwelling stock; Owned by All Sectors ;  Australian Capital Territory ;,Quarter,$ Millions,Original
+A83728646C,Value of dwelling stock; Owned by All Sectors ;  Australia ;,Quarter,$ Millions,Original
+A83728607L,Mean price of residential dwellings ;  New South Wales ;,Quarter,$'000,Original
+A83728612F,Mean price of residential dwellings ;  Victoria ;,Quarter,$'000,Original
+A83728617T,Mean price of residential dwellings ;  Queensland ;,Quarter,$'000,Original
+A83728622K,Mean price of residential dwellings ;  South Australia ;,Quarter,$'000,Original
+A83728627W,Mean price of residential dwellings ;  Western Australia ;,Quarter,$'000,Original
+A83728632R,Mean price of residential dwellings ;  Tasmania ;,Quarter,$'000,Original
+A83728637A,Mean price of residential dwellings ;  Northern Territory ;,Quarter,$'000,Original
+A83728642V,Mean price of residential dwellings ;  Australian Capital Territory ;,Quarter,$'000,Original
+A83728647F,Mean price of residential dwellings ;  Australia ;,Quarter,$'000,Original
+A83728605J,Number of residential dwellings ;  New South Wales ;,Quarter,000,Original
+A83728610A,Number of residential dwellings ;  Victoria ;,Quarter,000,Original
+A83728615L,Number of residential dwellings ;  Queensland ;,Quarter,000,Original
+A83728620F,Number of residential dwellings ;  South Australia ;,Quarter,000,Original
+A83728625T,Number of residential dwellings ;  Western Australia ;,Quarter,000,Original
+A83728630K,Number of residential dwellings ;  Tasmania ;,Quarter,000,Original
+A83728635W,Number of residential dwellings ;  Northern Territory ;,Quarter,000,Original
+A83728640R,Number of residential dwellings ;  Australian Capital Territory ;,Quarter,000,Original
+A83728645A,Number of residential dwellings ;  Australia ;,Quarter,000,Original

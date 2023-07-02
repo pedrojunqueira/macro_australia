@@ -1,0 +1,18 @@
+series_id,content,frequency,unit,series_type
+FIRMMCRTD,Cash Rate Target on date,Daily,Per cent,Original
+FIRMMCCRT,Change in the Cash Rate Target (in percentage points),as announced,Per cent,Original
+FIRMMCRID,Interbank Overnight Cash Rate on date,Daily,Per cent,Original
+FIRMMCRIH,Highest Interbank Overnight Cash Rate on date,Daily,Per cent,Original
+FIRMMCRIL,Lowest Interbank Overnight Cash Rate on date,Daily,Per cent,Original
+FIRMMCRIV,Volume of Interbank Overnight Cash Market Transactions on date,Daily,$m,Original
+FIRMMCRIN,Number of Interbank Overnight Cash Market Transactions on date,Daily,Number ,Original
+FIRMMCTRI,Cash Rate Total Return Index on date,Daily,Index 04-Jan-2011=100,Original
+FIRMMBAB30D,Bank Accepted Bills/Negotiable Certificates of Deposit-1 month,Daily,Per cent,Original
+FIRMMBAB90D,Bank Accepted Bills/Negotiable Certificates of Deposit-3 months,Daily,Per cent,Original
+FIRMMBAB180D,Bank Accepted Bills/Negotiable Certificates of Deposit- 6 months,Daily,Per cent,Original
+FIRMMOIS1D,Overnight Indexed Swaps-1 month,Daily,Per cent,Original
+FIRMMOIS3D,Overnight Indexed Swaps-3 months,Daily,Per cent,Original
+FIRMMOIS6D,Overnight Indexed Swaps-6 months,Daily,Per cent,Original
+FIRMMTN1D,Treasury Note-1 month,Daily,Per cent,Original
+FIRMMTN3D,Treasury Note-3 month,Daily,Per cent,Original
+FIRMMTN6D,Treasury Note-6 month,Daily,Per cent,Original

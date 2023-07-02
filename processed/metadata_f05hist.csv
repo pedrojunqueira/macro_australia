@@ -1,0 +1,31 @@
+series_id,content,frequency,unit,series_type
+FILRSBVRT,Lending rates; Small business; Variable; Term,Monthly,Per cent per annum,Original
+FILRSBVOO,Lending rates; Small business; Variable; Overdraft,Monthly,Per cent per annum,Original
+FILRHLBVS,Lending rates; Housing loans; Banks; Variable; Standard; Owner-occupier,Monthly,Per cent per annum,Original
+FILRHLBVD,Lending rates; Housing loans; Banks; Variable; Discounted; Owner-occupier,Monthly,Per cent per annum,Original
+FILRHLBVO,Lending rates; Housing loans; Banks; Variable; Standard interest-only; Owner-occupier,Monthly,Per cent per annum,Original
+FILRHL3YF,Lending rates; Housing loans; Banks; 3-year fixed; Owner-occupier,Monthly,Per cent per annum,Original
+FILRHLBVSI,Lending rates; Housing loans; Banks; Variable; Standard; Investor,Monthly,Per cent per annum,Original
+FILRHLBVDI,Lending rates; Housing loans; Banks; Variable; Discounted; Investor,Monthly,Per cent per annum,Original
+FILRHLBVDO,Lending rates; Housing loans; Banks; Variable; Standard interest-only; Investor,Monthly,Per cent per annum,Original
+FILRHL3YFI,Lending rates; Housing loans; Banks; 3-year fixed; Investor,Monthly,Per cent per annum,Original
+FILRPLRCCS,Lending rates; Personal loans; Revolving credit; Credit cards; Standard rate,Monthly,Per cent per annum,Original
+FILRPLRCCL,Lending rates; Personal loans; Revolving credit; Credit cards; Low rate,Monthly,Per cent per annum,Original
+FILRSBVOT,Lending rates; Small business; Variable; Other; Term – For series breaks see Series Breaks,Monthly,Per cent per annum,Original
+FILRSBVRO,Lending rates; Small business; Variable; Residential-secured; Overdraft – For series breaks see Series Breaks,Monthly,Per cent per annum,Original
+FILRSBVSO,Lending rates; Small business; Variable; Small overdraft – For series breaks see Series Breaks,Monthly,Per cent per annum,Original
+FILRSBVWA,Lending rates; Small business; Variable; Weighted-average rate on credit outstanding – For series breaks see Series Breaks,Monthly,Per cent per annum,Original
+FILRSB3YF,Lending rates; Small business; 3-year fixed – For series breaks see Series Breaks,Monthly,Per cent per annum,Original
+FILRLBWAV,Lending rates; Large business; Weighted-average rate on credit outstanding; Variable,Monthly,Per cent per annum,Original
+FILRLBWAB,Lending rates; Large business; Weighted-average rate on credit outstanding; Bills,Monthly,Per cent per annum,Original
+FILRPLTUF,Lending rates; Personal loans; Term loans (unsecured); Fixed – For series breaks see Series Breaks,Monthly,Per cent per annum,Original
+FILRPLTUV,Lending rates; Personal loans; Term loans (unsecured); Variable,Monthly,Per cent per annum,Original
+FILRPLRCHE,Lending rates; Personal loans; Revolving credit; Home equity loans,Monthly,Per cent per annum,Original
+FILRPLRCML,Lending rates; Personal loans; Revolving credit; Margin loans,Monthly,Per cent per annum,Original
+FILRHLMMS,Lending rates; Housing loans; Mortgage managers; Variable; Standard,Monthly,Per cent per annum,Original
+FILRHLMMB,Lending rates; Housing loans; Mortgage managers; Variable; Basic,Monthly,Per cent per annum,Original
+FILRSAVR,Lending rates; Securitised housing loans; Average outstanding variable rate,Monthly,Per cent per annum,Original
+FILRSAVOPI,Lending rates; Securitised housing loans; Average outstanding variable rate; Owner-occupier; Principal & Interest,Monthly,Per cent per annum,Original
+FILRSAVOI,Lending rates; Securitised housing loans; Average outstanding variable rate; Owner-occupier; Interest Only,Monthly,Per cent per annum,Original
+FILRSAVIPI,Lending rates; Securitised housing loans; Average outstanding variable rate; Investor; Principal & Interest,Monthly,Per cent per annum,Original
+FILRSAVIIO,Lending rates; Securitised housing loans; Average outstanding variable rate; Investor; Interest Only,Monthly,Per cent per annum,Original

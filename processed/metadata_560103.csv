@@ -1,0 +1,37 @@
+series_id,content,frequency,unit,series_type
+A108299116K,Households ;  Housing Finance ;  Owner occupier ;  Total housing excluding refinancing ;  New loan commitments ;  Number ;,Month,Number,Original
+A108284976J,Households ;  Housing Finance ;  Owner occupier ;  Construction of dwellings ;  New loan commitments ;  Number ;,Month,Number,Original
+A108280580R,Households ;  Housing Finance ;  Owner occupier ;  Purchase of newly erected dwellings ;  New loan commitments ;  Number ;,Month,Number,Original
+A108299018F,Households ;  Housing Finance ;  Owner occupier ;  Purchase of existing dwellings ;  New loan commitments ;  Number ;,Month,Number,Original
+A108298969V,Households ;  Housing Finance ;  Owner occupier ;  Purchase of residential land ;  New loan commitments ;  Number ;,Month,Number,Original
+A108294237R,"Households ;  Housing Finance ;  Owner occupier ;  Alterations, additions and repairs ;  New loan commitments ;  Number ;",Month,Number,Original
+A108294069R,Households ;  Housing Finance ;  Owner occupier ;  External refinancing ;  New loan commitments ;  Number ;,Month,Number,Original
+A108280461X,Households ;  Housing Finance ;  Owner occupier ;  Internal refinancing ;  New loan commitments ;  Number ;,Month,Number,Original
+A108299115J,Households ;  Housing Finance ;  Owner occupier ;  Total housing excluding refinancing ;  New loan commitments ;  Value ;,Month,$ Millions,Original
+A108284975F,Households ;  Housing Finance ;  Owner occupier ;  Construction of dwellings ;  New loan commitments ;  Value ;,Month,$ Millions,Original
+A108280579F,Households ;  Housing Finance ;  Owner occupier ;  Purchase of newly erected dwellings ;  New loan commitments ;  Value ;,Month,$ Millions,Original
+A108299017C,Households ;  Housing Finance ;  Owner occupier ;  Purchase of existing dwellings ;  New loan commitments ;  Value ;,Month,$ Millions,Original
+A108298968T,Households ;  Housing Finance ;  Owner occupier ;  Purchase of residential land ;  New loan commitments ;  Value ;,Month,$ Millions,Original
+A108294236L,"Households ;  Housing Finance ;  Owner occupier ;  Alterations, additions and repairs ;  New loan commitments ;  Value ;",Month,$ Millions,Original
+A108294068L,Households ;  Housing Finance ;  Owner occupier ;  External refinancing ;  New loan commitments ;  Value ;,Month,$ Millions,Original
+A108280460W,Households ;  Housing Finance ;  Owner occupier ;  Internal refinancing ;  New loan commitments ;  Value ;,Month,$ Millions,Original
+A108295756K,Households ;  Housing Finance ;  Owner occupier ;  Construction of dwellings ;  New loan commitments ;  Number ;.1,Month,Number,Seasonally Adjusted
+A108268498A,Households ;  Housing Finance ;  Owner occupier ;  Purchase of newly erected dwellings ;  New loan commitments ;  Number ;.1,Month,Number,Seasonally Adjusted
+A108282078V,Households ;  Housing Finance ;  Owner occupier ;  Purchase of existing dwellings ;  New loan commitments ;  Number ;.1,Month,Number,Seasonally Adjusted
+A108295609K,Households ;  Housing Finance ;  Owner occupier ;  External refinancing ;  New loan commitments ;  Number ;.1,Month,Number,Seasonally Adjusted
+A108268693J,Households ;  Housing Finance ;  Owner occupier ;  Total housing excluding refinancing ;  New loan commitments ;  Value ;.1,Month,$ Millions,Seasonally Adjusted
+A108295755J,Households ;  Housing Finance ;  Owner occupier ;  Construction of dwellings ;  New loan commitments ;  Value ;.1,Month,$ Millions,Seasonally Adjusted
+A108268497X,Households ;  Housing Finance ;  Owner occupier ;  Purchase of newly erected dwellings ;  New loan commitments ;  Value ;.1,Month,$ Millions,Seasonally Adjusted
+A108282077T,Households ;  Housing Finance ;  Owner occupier ;  Purchase of existing dwellings ;  New loan commitments ;  Value ;.1,Month,$ Millions,Seasonally Adjusted
+A108300424V,"Households ;  Housing Finance ;  Owner occupier ;  Alterations, additions and repairs ;  New loan commitments ;  Value ;.1",Month,$ Millions,Seasonally Adjusted
+A108295608J,Households ;  Housing Finance ;  Owner occupier ;  External refinancing ;  New loan commitments ;  Value ;.1,Month,$ Millions,Seasonally Adjusted
+A108288091W,Households ;  Housing Finance ;  Owner occupier ;  Construction of dwellings ;  New loan commitments ;  Number ;.2,Month,Number,Trend
+A108269975X,Households ;  Housing Finance ;  Owner occupier ;  Purchase of newly erected dwellings ;  New loan commitments ;  Number ;.2,Month,Number,Trend
+A108279152W,Households ;  Housing Finance ;  Owner occupier ;  Purchase of existing dwellings ;  New loan commitments ;  Number ;.2,Month,Number,Trend
+A108292431J,Households ;  Housing Finance ;  Owner occupier ;  External refinancing ;  New loan commitments ;  Number ;.2,Month,Number,Trend
+A108292822T,Households ;  Housing Finance ;  Owner occupier ;  Total housing excluding refinancing ;  New loan commitments ;  Value ;.2,Month,$ Millions,Trend
+A108288090V,Households ;  Housing Finance ;  Owner occupier ;  Construction of dwellings ;  New loan commitments ;  Value ;.2,Month,$ Millions,Trend
+A108269974W,Households ;  Housing Finance ;  Owner occupier ;  Purchase of newly erected dwellings ;  New loan commitments ;  Value ;.2,Month,$ Millions,Trend
+A108279151V,Households ;  Housing Finance ;  Owner occupier ;  Purchase of existing dwellings ;  New loan commitments ;  Value ;.2,Month,$ Millions,Trend
+A108292605W,"Households ;  Housing Finance ;  Owner occupier ;  Alterations, additions and repairs ;  New loan commitments ;  Value ;.2",Month,$ Millions,Trend
+A108292430F,Households ;  Housing Finance ;  Owner occupier ;  External refinancing ;  New loan commitments ;  Value ;.2,Month,$ Millions,Trend
