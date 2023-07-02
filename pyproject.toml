@@ -1,0 +1,17 @@
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+single-quotes = true
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.pytest_cache
+  | dist
+  | build
+  | docs
+)/
+'''

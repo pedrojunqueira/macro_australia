@@ -4,13 +4,13 @@ from datetime import date
 import pandas as pd
 import requests
 
-BASE_PATH = Path(__file__).parent
+BASE_PATH = Path(__file__).parent.parent
 DATABASE_PATH = BASE_PATH / 'database'
-BASE_URLS = { "abs" : "https://www.abs.gov.au", "rba":"https://www.rba.gov.au"}
+BASE_URLS = {"abs": "https://www.abs.gov.au", "rba": "https://www.rba.gov.au"}
 
 releases = pd.read_parquet(DATABASE_PATH / "releases.parquet")
 
-latest_releases = releases[releases["type"]=="latest"]
+latest_releases = releases[releases["type"] == "latest"]
 
 for _, row in latest_releases.iterrows():
     print(f"downloading... {row['name']}")
@@ -27,8 +27,7 @@ for _, row in latest_releases.iterrows():
 
     try:
         r = requests.get(url)
-        with open( folder_path / file, "wb") as fp:
+        with open(folder_path / file, "wb") as fp:
             fp.write(r.content)
     except Exception as e:
         print(e)
-    
