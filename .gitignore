@@ -50,3 +50,9 @@ l10n/
 data_series
 queries.sql
 .vscode
+
+# project data files
+
+# ./database/*
+# ./processed/*
+# ./source/*
