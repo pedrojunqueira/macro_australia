@@ -3,19 +3,16 @@ from datetime import date
 
 import pandas as pd
 
-BASE_PATH = Path(__file__).parent.parent
-SOURCE_PATH = BASE_PATH / "source"
-
 
 def transfor_rba_files(files) -> list:
     transformed_files = []
 
     for file in files:
-        df = pd.read_excel(file, skiprows=10, sheet_name="Data")
+        df = pd.read_excel(file, skiprows=10, sheet_name='Data')
 
-        df.rename(columns={"Series ID": "Month"}, inplace=True)
+        df.rename(columns={'Series ID': 'Month'}, inplace=True)
 
-        series_data = df.melt(id_vars=["Month"])
+        series_data = df.melt(id_vars=['Month'])
 
         series_data.columns = [col.lower() for col in series_data.columns]
 
@@ -28,11 +25,11 @@ def transform_abs_files(files) -> list:
     transformed_dfs = []
 
     for file in files:
-        df = pd.read_excel(file, skiprows=9, sheet_name="Data1")
+        df = pd.read_excel(file, skiprows=9, sheet_name='Data1')
 
-        df.rename(columns={"Series ID": "Month"}, inplace=True)
+        df.rename(columns={'Series ID': 'Month'}, inplace=True)
 
-        series_data = df.melt(id_vars=["Month"])
+        series_data = df.melt(id_vars=['Month'])
 
         series_data.columns = [col.lower() for col in series_data.columns]
 
@@ -45,7 +42,7 @@ def transform_abs_files_meta(files) -> list:
     transformed_dfs = []
 
     for file in files:
-        df = pd.read_excel(file, sheet_name="Data1")
+        df = pd.read_excel(file, sheet_name='Data1')
 
         df_metadata = df[:9].T
 
@@ -55,7 +52,7 @@ def transform_abs_files_meta(files) -> list:
 
         df_metadata.drop(0, inplace=True)
 
-        df_metadata = df_metadata.rename(columns={"Unnamed: 0": "Content"})
+        df_metadata = df_metadata.rename(columns={'Unnamed: 0': 'Content'})
 
         df_metadata.columns = [
             '_'.join(col.split()).replace('.', '').lower()
@@ -64,17 +61,17 @@ def transform_abs_files_meta(files) -> list:
 
         df_metadata.drop(
             columns=[
-                "data_type",
-                "collection_month",
-                "series_start",
-                "series_end",
-                "no_obs",
+                'data_type',
+                'collection_month',
+                'series_start',
+                'series_end',
+                'no_obs',
             ],
             inplace=True,
         )
 
         df_metadata = df_metadata[
-            ["series_id", "content", "frequency", "unit", "series_type"]
+            ['series_id', 'content', 'frequency', 'unit', 'series_type']
         ]
 
         transformed_dfs.append(df_metadata)
@@ -86,7 +83,7 @@ def transform_rba_files_meta(files) -> list:
     transformed_dfs = []
 
     for file in files:
-        df = pd.read_excel(file, sheet_name="Data", skiprows=1)
+        df = pd.read_excel(file, sheet_name='Data', skiprows=1)
 
         df_metadata = df[:9]
 
@@ -107,19 +104,19 @@ def transform_rba_files_meta(files) -> list:
 
         df_metadata.rename(
             columns={
-                "description": "content",
-                "type": "series_type",
-                "units": "unit",
+                'description': 'content',
+                'type': 'series_type',
+                'units': 'unit',
             },
             inplace=True,
         )
 
         df_metadata.drop(
-            columns=["title", "source", "publication_date"], inplace=True
+            columns=['title', 'source', 'publication_date'], inplace=True
         )
 
         df_metadata = df_metadata[
-            ["series_id", "content", "frequency", "unit", "series_type"]
+            ['series_id', 'content', 'frequency', 'unit', 'series_type']
         ]
 
         transformed_dfs.append(df_metadata)
@@ -127,16 +124,18 @@ def transform_rba_files_meta(files) -> list:
     return transformed_dfs
 
 
-FILE_TRANSFORMERS = {"rba": transfor_rba_files, "abs": transform_abs_files}
+FILE_TRANSFORMERS = {'rba': transfor_rba_files, 'abs': transform_abs_files}
 
 METADATA_TRANSFORMERS = {
-    "rba": transform_rba_files_meta,
-    "abs": transform_abs_files_meta,
+    'rba': transform_rba_files_meta,
+    'abs': transform_abs_files_meta,
 }
 
 
-def get_latest_files(agency: str) -> Path:
-    folder_path = SOURCE_PATH / agency
+def get_latest_files(
+    agency: str, data_files_path: Path, history: bool = False
+) -> Path:
+    folder_path = data_files_path / "source" / agency
 
     subdirectories = [
         subdir for subdir in folder_path.iterdir() if subdir.is_dir()
@@ -152,11 +151,21 @@ def get_latest_files(agency: str) -> Path:
 
     latest_download = sorted_digit_dirs[0]
 
-    return folder_path.glob(f"{latest_download}/*.xls*")
+    return (
+        folder_path.glob(f'{latest_download}/*.xls*')
+        if not history
+        else folder_path.glob(f'history/*.xls*')
+    )
 
 
-def process_raw_data(agency: str) -> None:
-    files = [file for file in get_latest_files(agency)]
+def process_raw_data(
+    agency: str, data_files_path: Path, history: bool = False
+) -> None:
+    files = (
+        [file for file in get_latest_files(agency, data_files_path)]
+        if not history
+        else [file for file in get_latest_files(agency, data_files_path, True)]
+    )
 
     file_transformer = FILE_TRANSFORMERS[agency]
 
@@ -164,22 +173,28 @@ def process_raw_data(agency: str) -> None:
 
     for i, df in enumerate(transformed_dfs):
         current_date = date.today()
-        folder_date_name = current_date.strftime("%Y%m%d")
-        folder_path = Path(BASE_PATH / "processed" / folder_date_name)
-        if not folder_path.exists():
+        folder_date_name = current_date.strftime('%Y%m%d')
+        folder_path = (
+            Path(data_files_path / 'processed' / folder_date_name)
+            if not history
+            else Path(data_files_path / 'processed' / 'history')
+        )
+        if not folder_path.exists() and not history:
             folder_path.mkdir(parents=True)
 
-        series_file_name = f"data_{files[i].name.split('.')[0]}.csv"
+        series_file_name = f'data_{files[i].name.split(".")[0]}.csv'
 
         sink_file_path = (
-            BASE_PATH / "processed" / folder_date_name / series_file_name
+            data_files_path / 'processed' / folder_date_name / series_file_name
+            if not history
+            else data_files_path / 'processed' / 'history' / series_file_name
         )
 
         df.to_csv(sink_file_path, index=False)
 
 
-def process_raw_metadata(agency: str) -> None:
-    files = [file for file in get_latest_files(agency)]
+def process_raw_metadata(agency: str, data_files_path: Path) -> None:
+    files = [file for file in get_latest_files(agency, data_files_path)]
 
     file_transformer = METADATA_TRANSFORMERS[agency]
 
@@ -187,20 +202,15 @@ def process_raw_metadata(agency: str) -> None:
 
     for i, df in enumerate(transformed_dfs):
         current_date = date.today()
-        folder_date_name = current_date.strftime("%Y%m%d")
-        folder_path = Path(BASE_PATH / "processed" / folder_date_name)
+        folder_date_name = current_date.strftime('%Y%m%d')
+        folder_path = Path(data_files_path / 'processed' / folder_date_name)
         if not folder_path.exists():
             folder_path.mkdir(parents=True)
 
-        series_file_name = f"metadata_{files[i].name.split('.')[0]}.csv"
+        series_file_name = f'metadata_{files[i].name.split(".")[0]}.csv'
 
         sink_file_path = (
-            BASE_PATH / "processed" / folder_date_name / series_file_name
+            data_files_path / 'processed' / folder_date_name / series_file_name
         )
 
         df.to_csv(sink_file_path, index=False)
-
-
-for agency in ["abs", "rba"]:
-    # process_raw_data(agency)
-    process_raw_metadata(agency)

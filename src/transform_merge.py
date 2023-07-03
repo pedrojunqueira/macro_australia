@@ -3,15 +3,8 @@ from pathlib import Path
 import pandas as pd
 
 
-BASE_PATH = Path(__file__).parent.parent
-SOURCE_PATH = BASE_PATH / 'processed'
-
-
-def get_latest_files(agency: str = None) -> Path:
-    folder_path = SOURCE_PATH
-
-    if agency:
-        folder_path = SOURCE_PATH / agency
+def get_latest_files(data_files_path: Path) -> Path:
+    folder_path = data_files_path / 'processed'
 
     subdirectories = [
         subdir for subdir in folder_path.iterdir() if subdir.is_dir()
@@ -27,17 +20,25 @@ def get_latest_files(agency: str = None) -> Path:
 
     latest_download = sorted_digit_dirs[-1]
 
-    return folder_path.glob(f"{latest_download}/*.csv*")
+    return folder_path.glob(f'{latest_download}/*.csv*')
 
 
-def concatenate_files(file_type: str) -> None:
-    processed_files = get_latest_files()
+def concatenate_files(file_type: str, data_files_path: Path) -> None:
+    processed_files = get_latest_files(data_files_path)
 
     file_paths = [
         file
         for file in processed_files
         if file.name.startswith(file_type) and file.name.endswith('.csv')
     ]
+
+    history_file_paths = [
+        file
+        for file in (data_files_path / 'processed').glob(f'history/*.csv*')
+        if file.name.startswith(file_type) and file.name.endswith('.csv')
+    ]
+
+    file_paths.extend(history_file_paths)
 
     dfs = []
     for file in file_paths:
@@ -47,11 +48,7 @@ def concatenate_files(file_type: str) -> None:
     concatenated = pd.concat(dfs)
 
     concatenated.to_parquet(
-        BASE_PATH / "database" / f"{file_type}.parquet",
+        data_files_path / 'database' / f'{file_type}.parquet',
         index=False,
-        engine="pyarrow",
+        engine='pyarrow',
     )
-
-
-concatenate_files("data")
-concatenate_files("metadata")

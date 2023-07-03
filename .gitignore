@@ -53,6 +53,6 @@ queries.sql
 
 # project data files
 
-# ./database/*
-# ./processed/*
-# ./source/*
+database/
+processed/
+source/
