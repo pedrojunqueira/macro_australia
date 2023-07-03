@@ -58,3 +58,8 @@ processed/
 source/
 
 __queuestorage__
+
+## ignore PBI files
+
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

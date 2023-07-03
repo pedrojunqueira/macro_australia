@@ -1,0 +1,88 @@
+{
+  "config": "{\"version\":\"5.44\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU04\",\"version\":\"5.45\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "abstrans3601216882942926.png",
+            "path": "abstrans3601216882942926.png",
+            "type": 100
+          },
+          {
+            "name": "rbatrans9061234309651067.png",
+            "path": "rbatrans9061234309651067.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU04",
+            "path": "BaseThemes/CY23SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"73D\"}}}}}]}}",
+      "displayName": "income to loan",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"00d5e305cba1b56c72bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":17.32181770393064,\"y\":0.9846832088995672,\"z\":2000,\"width\":356.4719665271966,\"height\":149.44401673640166,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"abstrans3601216882942926.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 149.44,
+          "width": 356.47,
+          "x": 17.32,
+          "y": 0.98,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"3dbc2808529182ce13bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":387.5042444821732,\"y\":46.22920203735143,\"z\":1000,\"width\":590.9208368200837,\"height\":68.55230125523012,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Australia Macroeconomic Indicators\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"padding\":[{\"properties\":{\"left\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"top\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 68.55,
+          "width": 590.92,
+          "x": 387.50,
+          "y": 46.23,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"84de3214e4efab30ff58\",\"layouts\":[{\"id\":0,\"position\":{\"x\":966.0856670763155,\"y\":2.3557292340041736,\"z\":3000,\"width\":296.14594142259415,\"height\":149.44401673640166,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"rbatrans9061234309651067.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 149.44,
+          "width": 296.15,
+          "x": 966.09,
+          "y": 2.36,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"e39e630963e6aa3fac98\",\"layouts\":[{\"id\":0,\"position\":{\"x\":17.823598326359832,\"y\":222.1094560669456,\"z\":0,\"width\":1244.909790794979,\"height\":459.30041841004186,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"final.AvgIncomeToLoanRatio\"},{\"queryRef\":\"calendar.AverageIncomeToLoanRatioAll\"}],\"Category\":[{\"queryRef\":\"calendar.Year\",\"active\":true},{\"queryRef\":\"calendar.MonthName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"final\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"calendar\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AvgIncomeToLoanRatio\"},\"Name\":\"final.AvgIncomeToLoanRatio\",\"NativeReferenceName\":\"income to loan ratio\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"MonthName\"},\"Name\":\"calendar.MonthName\",\"NativeReferenceName\":\"MonthName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AverageIncomeToLoanRatioAll\"},\"Name\":\"calendar.AverageIncomeToLoanRatioAll\",\"NativeReferenceName\":\"income to loan ratio average for total period\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"},\"Name\":\"calendar.Year\",\"NativeReferenceName\":\"Year\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"MonthName\"}}}]},\"columnProperties\":{\"final.AvgIncomeToLoanRatio\":{\"displayName\":\"income to loan ratio\"},\"calendar.AverageIncomeToLoanRatioAll\":{\"displayName\":\"income to loan ratio average for total period\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomCenter'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"general\":[{\"properties\":{\"responsive\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"showSeries\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"calendar.AverageIncomeToLoanRatioAll\"}},{\"properties\":{\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Above'\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"final.AvgIncomeToLoanRatio\"}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'% of average income to average loan ratio'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"padding\":[{\"properties\":{\"left\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"top\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"final\"}},\"Property\":\"month\"}},\"type\":\"Categorical\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"final\"}},\"Property\":\"month\"}},\"type\":\"Categorical\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"final\"}},\"Property\":\"month\"}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 459.30,
+          "width": 1244.91,
+          "x": 17.82,
+          "y": 222.11,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
