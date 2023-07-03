@@ -56,3 +56,5 @@ queries.sql
 database/
 processed/
 source/
+
+__queuestorage__

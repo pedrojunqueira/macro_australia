@@ -51,3 +51,15 @@ a file will be dumped in the root folder called `final.csv` which you can use to
 | cash_rate               |
 | cpi                     |
 | unemployement_rate      |
+
+### Folder for the data files
+
+```bash
+├── database
+├── processed
+├── source
+```
+
+for the first time you need to create them. For this just run
+
+`python create_data_dirs.py`
