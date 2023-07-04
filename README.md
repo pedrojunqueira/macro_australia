@@ -33,7 +33,12 @@ for the first time you need to create them. For this just run
 ```bash
 ├── database
 ├── processed
+│   └── history
 ├── source
+│   ├── abs
+│   │   └── history
+│   └── rba
+│       └── history
 ```
 
 5. run the historical pipeline (first time only)

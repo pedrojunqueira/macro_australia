@@ -149,7 +149,10 @@ def get_latest_files(
         ]
     )
 
-    latest_download = sorted_digit_dirs[0]
+    if sorted_digit_dirs:
+        latest_download = sorted_digit_dirs[0]
+    else:
+        latest_download = None
 
     return (
         folder_path.glob(f'{latest_download}/*.xls*')
