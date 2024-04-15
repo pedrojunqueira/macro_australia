@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.118.828.0 (23.06)"
+        "value": "2.128.751.0 (24.04)"
       },
       {
         "name": "PBI_ProTooling",
@@ -25,7 +25,6 @@
         "name": "en-AU",
         "linguisticMetadata": {
           "content": {
-            "DynamicImprovement": "HighConfidence",
             "Language": "en-US",
             "Version": "1.0.0"
           },
@@ -82,7 +81,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isDataTypeInferred": true,
             "isHidden": true,
             "isNameInferred": true,
@@ -106,7 +104,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "074b4dbd-310f-48c7-a5fe-ea1d5105bea7",
@@ -150,7 +147,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "5e428b00-2ebe-4d28-9e24-b79f79e31aac",
@@ -194,7 +190,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "51aa4908-ff10-488b-acee-91df89ba8794",
@@ -216,7 +211,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "49e04707-8b28-44ec-8e68-8150ee3d963c",
@@ -295,7 +289,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isDataTypeInferred": true,
             "isHidden": true,
             "isNameInferred": true,
@@ -319,7 +312,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "91af008f-7bf8-45f8-8e87-df57da5bc275",
@@ -363,7 +355,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "c7342e26-0073-4a1c-a4d7-5691d4e1b629",
@@ -407,7 +398,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "6bc4e899-61fb-4e19-8580-47f0e71b7297",
@@ -429,7 +419,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "e489d4c9-2d80-4874-963a-95c9595e2dd4",
@@ -612,6 +601,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -817,7 +810,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Csv.Document(File.Contents(\"\\\\wsl.localhost\\ubuntu-pytalista\\home\\pedro\\code\\abs_data\\final.csv\"),[Delimiter=\",\", Columns=11, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    Source = Csv.Document(File.Contents(\"\\\\wsl.localhost\\ubuntu-pytalista\\home\\pedro\\code\\macro_australia\\final.csv\"),[Delimiter=\",\", Columns=11, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"month\", type date}, {\"weekly_earnings\", type number}, {\"variable_loan_owner\", type number}, {\"cash_rate\", type number}, {\"cpi\", type number}, {\"unemployement_rate\", type number}, {\"total_new_loans_no\", Int64.Type}, {\"total_new_loans_value\", type number}, {\"average_loan_value\", type number}, {\"average_yearly_interest\", type number}, {\"loan_repayment_perc_income\", type number}})",
                 "in",

@@ -134,11 +134,3 @@ you can use the embeded version Iframe of the report using this link below
 
 
 ## ABS downloads
-
-house_prices - 641606.xlsx - end december 2021
-weekly_earnings - 6302002.xlsx - end november 2023 - ok
-house_finance - 560103.xlsx - end january 2024 - ok
-inflation - 640101.xlsx - end december 2023 - ok
-unemployment - 6202001.xlsx - february 2024  ok
-cash_rate - f01hist.xlsx - march 2024
-variable_home_loan - f05hist.xlsx - march 2024
