@@ -146,8 +146,10 @@ def get_latest_files(
             subdir.name
             for subdir in subdirectories
             if subdir.name.isdigit() and len(subdir.name) == 8
-        ]
+        ],
+        reverse= True
     )
+
 
     if sorted_digit_dirs:
         latest_download = sorted_digit_dirs[0]
@@ -169,7 +171,7 @@ def process_raw_data(
         if not history
         else [file for file in get_latest_files(agency, data_files_path, True)]
     )
-
+    
     file_transformer = FILE_TRANSFORMERS[agency]
 
     transformed_dfs = file_transformer(files)

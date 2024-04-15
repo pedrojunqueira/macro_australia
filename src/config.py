@@ -24,6 +24,6 @@ PUBLICATIONS = {
         '/statistics/labour/employment-and-unemployment/labour-force-australia',
         '6202001.xlsx',
     ),
-    'cash_rate': ('rba', '/statistics/tables/xls', 'f01hist.xls'),
-    'variable_home_loan': ('rba', '/statistics/tables/xls', 'f05hist.xls'),
+    'cash_rate': ('rba', '/statistics/tables/xls', 'f01hist.xlsx'),
+    'variable_home_loan': ('rba', '/statistics/tables/xls', 'f05hist.xlsx'),
 }

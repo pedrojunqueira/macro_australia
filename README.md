@@ -116,3 +116,29 @@ you can use the embeded version Iframe of the report using this link below
   allowfullscreen="true"
 ></iframe>
 ```
+## targeted series
+
+| series_id   | content                                                                                                      | frequency | unit               | series_type        |
+|-------------|--------------------------------------------------------------------------------------------------------------|-----------|--------------------|--------------------|
+| A84423050A  | Unemployment rate ;  Persons ;                                                                               | Month     | Percent            | Seasonally Adjusted|
+| A84998735A  | Earnings; Persons; Total earnings ;                                                                          | Biannual  | $                  | Seasonally Adjusted|
+| A108284976J | Households ;  Housing Finance ;  Owner occupier ;  Construction of dwellings ;  New loan commitments ;  Number ;| Month     | Number             | Original           |
+| A108280580R | Households ;  Housing Finance ;  Owner occupier ;  Purchase of newly erected dwellings ;  New loan commitments ;  Number ;| Month     | Number             | Original           |
+| A108299018F | Households ;  Housing Finance ;  Owner occupier ;  Purchase of existing dwellings ;  New loan commitments ;  Number ;| Month     | Number             | Original           |
+| A108284975F | Households ;  Housing Finance ;  Owner occupier ;  Construction of dwellings ;  New loan commitments ;  Value ;| Month     | $ Millions         | Original           |
+| A108280579F | Households ;  Housing Finance ;  Owner occupier ;  Purchase of newly erected dwellings ;  New loan commitments ;  Value ;| Month     | $ Millions         | Original           |
+| A108299017C | Households ;  Housing Finance ;  Owner occupier ;  Purchase of existing dwellings ;  New loan commitments ;  Value ;| Month     | $ Millions         | Original           |
+| FILRHLBVS   | Lending rates; Housing loans; Banks; Variable; Standard; Owner-occupier                                    | Monthly   | Per cent per annum | Original           |
+| A2325847F   | Percentage Change from Corresponding Quarter of Previous Year ;  All groups CPI ;  Australia ;             | Quarter   | Percent            | Original           |
+| FIRMMCRT    | Cash Rate Target; monthly average                                                                           | Monthly   | Per cent           | Original           |
+
+
+## ABS downloads
+
+house_prices - 641606.xlsx - end december 2021
+weekly_earnings - 6302002.xlsx - end november 2023 - ok
+house_finance - 560103.xlsx - end january 2024 - ok
+inflation - 640101.xlsx - end december 2023 - ok
+unemployment - 6202001.xlsx - february 2024  ok
+cash_rate - f01hist.xlsx - march 2024
+variable_home_loan - f05hist.xlsx - march 2024
