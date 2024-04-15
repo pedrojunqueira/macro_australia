@@ -72,7 +72,7 @@ a file will be dumped in the root folder called `final.csv` which you can use to
 
 ## Power BI report
 
-A Power BI report with the data can be viewed in this [link addrress](https://app.powerbi.com/view?r=eyJrIjoiZGI3ZjY3MmQtODY4NC00ZGIwLTliNDYtNTY1MDdmZWRkZWVhIiwidCI6ImM3NjcyNjNkLWRjNmItNGYyZS1iNDc5LTc1YWMyYjQ2ZWEwOSIsImMiOjN9&pageName=ReportSection)
+A Power BI report with the data can be viewed in this [link addrress](https://app.powerbi.com/view?r=eyJrIjoiYzBlMzU0MDktZDRjOC00NTQ1LWExYmYtYmY0NDU0ZjAyMTVmIiwidCI6ImVjMDhmZjllLTEwYzktNDUwZS05YmRkLTQ4ZDNlNzEwYWZiOSJ9)
 
 In the root directory a Power BI project file can be found under the power_bi folder
 
@@ -107,14 +107,7 @@ To know more about Power BI project and how to integrate it with git read more [
 you can use the embeded version Iframe of the report using this link below
 
 ```html
-<iframe
-  title="Report Section"
-  width="600"
-  height="373.5"
-  src="https://app.powerbi.com/view?r=eyJrIjoiZGI3ZjY3MmQtODY4NC00ZGIwLTliNDYtNTY1MDdmZWRkZWVhIiwidCI6ImM3NjcyNjNkLWRjNmItNGYyZS1iNDc5LTc1YWMyYjQ2ZWEwOSIsImMiOjN9&pageName=ReportSection"
-  frameborder="0"
-  allowfullscreen="true"
-></iframe>
+<iframe title="abs_data" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYzBlMzU0MDktZDRjOC00NTQ1LWExYmYtYmY0NDU0ZjAyMTVmIiwidCI6ImVjMDhmZjllLTEwYzktNDUwZS05YmRkLTQ4ZDNlNzEwYWZiOSJ9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 ## targeted series
 
@@ -132,5 +125,3 @@ you can use the embeded version Iframe of the report using this link below
 | A2325847F   | Percentage Change from Corresponding Quarter of Previous Year ;  All groups CPI ;  Australia ;             | Quarter   | Percent            | Original           |
 | FIRMMCRT    | Cash Rate Target; monthly average                                                                           | Monthly   | Per cent           | Original           |
 
-
-## ABS downloads
